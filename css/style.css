@@ -1,5 +1,89 @@
-@
+/* 화면 너비가 1200px 이하일 때 */
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 14px;
+    }
 
-* {
-	
+    
+}
+
+/* 화면 너비가 800px 이하일 때 */
+@media screen and (max-width:800px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* 화면 너비가 600px 이하일 때 */
+@media screen and (max-width:600px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+/* 화면 너비가 400px 이하일 때 */
+@media screen and (max-width:400px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+
+
+.gnb {
+    width: 1400px;
+    height: 50px;
+    margin: 30px auto;
+    position: relative;
+
+}
+
+.gnb .depth1 {
+    width: 200px;
+    float: left;
+    text-align: center;
+}
+
+.gnb .depth1>a {
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background-color: #202020;
+    color: #fff;
+}
+
+.gnb .depth1:hover>a {
+    background-color: red;
+}
+
+.gnb .depth1:hover>.depth2 {
+    display: block;
+}
+
+.gnb .depth2 {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 1400px;
+    background-color: #d0d0d0;
+    display: none;
+}
+
+.gnb .depth2>li {
+    float: left;
+}
+
+.gnb .depth2>li>a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.gnb .depth2>li>a:hover {
+    background-color: #444;
+    color: #fff;
 }
