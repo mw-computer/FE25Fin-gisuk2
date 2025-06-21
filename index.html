@@ -4,88 +4,1181 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>웹화면구현:김똘똘-ㅇㅇㅇ클로닝
-		//TODO: 타이틀에 본인 이름 넣기
+	<title> 신은욱 2051031 최종프로젝트 - 프로그래머스 사이트 웹화면구현
 	</title>
-	<link rel="stylesheet" href="/css/style.css">
+	<link href="https://d1nuzc1w51n1es.cloudfront.net/cc825c08b3656ad7958c.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-	<nav>
-		<div class="gnb">
-			<ul>
-				<li class="depth1">
-					<a href="#">HOME1</a>
-					<ul class="depth2">
-						<li><a href="#">서브메뉴 1</a></li>
-						<li><a href="#">서브메뉴 2</a></li>
-						<li><a href="#">서브메뉴 3</a></li>
-					</ul>
-				</li>
-				<li class="depth1 cf">
-					<a href="#">HOME2</a>
-					<ul class="depth2">
-						<li><a href="#">서브메뉴 4</a></li>
-						<li><a href="#">서브메뉴 5</a></li>
-						<li><a href="#">서브메뉴 6</a></li>
-					</ul>
-				</li>
-				<li class="depth1 cf">
-					<a href="#">HOME2</a>
-					<ul class="depth2">
-						<li><a href="#">서브메뉴 7</a></li>
-						<li><a href="#">서브메뉴 8</a></li>
-						<li><a href="#">서브메뉴 9</a></li>
-					</ul>
-				</li>
-				<li class="depth1 cf">
-					<a href="#">HOME2</a>
-					<ul class="depth2">
-						<li><a href="#">서브메뉴 10</a></li>
-						<li><a href="#">서브메뉴 11</a></li>
-						<li><a href="#">서브메뉴 12</a></li>
-					</ul>
-				</li>
-			</ul>
+	<div class="main-header">
+		<header class="main-header-style">
+			<section class="main-section">
+				<div>
+					<a class="logo" href="./index.html">
+						<img src="./images/programmers-logo-dark.png" alt="">
+					</a>
+					<div class="main-group-menu main">
+						<nav class="pc-ver">
+							<a href="#">
+								<div role="menuitem" aria-haspopup="menu" data-menu="edu">
+									<div class="open-nav-list" aria-current="false">
+										<div class="mono-nav-list">
+											<span>교육</span>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#">
+								<div role="menuitem" aria-haspopup="menu" data-menu="dev">
+									<div class="open-nav-list" aria-current="false">
+										<div class="mono-nav-list">
+											<span>데브코스</span>
+											<div class="span subSpan">부트캠프</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#">
+								<div role="menuitem" aria-haspopup="menu" data-menu="codt">
+									<div class="open-nav-list" aria-current="false">
+										<div class="mono-nav-list">
+											<span>코딩테스트</span>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#">
+								<div role="menuitem" aria-haspopup="menu" data-menu="auth">
+									<div class="open-nav-list" aria-current="false">
+										<div class="mono-nav-list">
+											<span>인증시험</span>
+											<i class="fa-solid fa-arrow-up-right-from-square link"></i>
+										</div>
+									</div>
+								</div>
+							</a>
+						</nav>
+						<div class="util-nav utility">
+							<a class="mono-util n1" href="#">블로그</a>
+							<a class="mono-util n1" href="#">기업서비스</a>
+							<a class="mono-util n1 n2" href="#">로그인</a>
+						</div>
+						<button class="mobile-ver">
+							<i class="fa-solid fa-bars"></i>
+						</button>
+					</div>
+				</div>
+			</section>
+			<div class="expanded-nav" role="menuitem" aria-expanded="false" data-target="edu">
+				<div>
+					<nav class="expanded-nav-part">
+						<ul class="expanded-nav-grid grid">
+							<li>
+								<ul class="grid-ul">
+									<li>
+										<a class="gridUlA gridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">교육 홈</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="gridUlA gridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">강의</span>
+											</div>
+										</a>
+										<ul>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">전체</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">데브코스</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">영상/실습 강의</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">PCCP.E 자격증</span>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="grid-ul">
+									<li>
+										<a class="gridUlA gridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">MY 스쿨</span>
+											</div>
+										</a>
+										<ul>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">수강 중인 코스</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">관리 중인 코스</span>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="grid-ul">
+									<li>
+										<a class="gridUlA gridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">강사 신청</span>
+											</div>
+										</a>
+										<ul>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">강사/멘토풀 등록</span>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="gridUlA gridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">캠퍼스</span>
+												<i class="fa-solid fa-arrow-up-right-from-square link"></i>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="expanded-nav" role="menuitem" aria-expanded="false" data-target="dev">
+				<div>
+					<nav class="expanded-nav-part">
+						<ul class="expanded-nav-grid grid">
+							<li>
+								<ul class="grid-ul">
+									<li>
+										<a class="gridUlA gridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">데브코스 홈</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="gridUlA gridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">웹 데브코스</span>
+											</div>
+										</a>
+										<ul>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">프론트엔드 과정</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">백엔드 과정</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">백엔드(with.ChatGPT) 과정</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">풀스텍 과정</span>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="grid-ul">
+									<li>
+										<a class="gridUlA gridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">데이터 데브 코스</span>
+											</div>
+										</a>
+										<ul>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">데이터 분석 과정</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">데이터 엔지니어링 과정</span>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="expanded-nav" role="menuitem" aria-expanded="false" data-target="codt">
+				<div>
+					<nav class="expanded-nav-part">
+						<ul class="expanded-nav-grid grid">
+							<li>
+								<ul class="grid-ul">
+									<li>
+										<a class="gridUlA gridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">코딩테스트 문제</span>
+											</div>
+										</a>
+										<ul>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">모든 문제</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">기초 문제</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">입문 문제</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">알고리즘 고득점 Kit</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">SQL 고득점 Kit</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">과제테스트</span>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a class="gridUlA gridUlC" href="#">
+													<div>
+														<span class="gridUlC-span">Q&A</span>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="grid-ul">
+									<li>
+										<a class="gridUlA gridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">스킬체크</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="expanded-nav" role="menuitem" aria-expanded="false" data-target="auth">
+				<div>
+				</div>
+			</div>
+			<div class="mobile-container mClose">
+				<div class="mobile-container-style">
+					<div class="mobile-topbar">
+						<a class="logo" href="./index.html">
+							<img src="./images/programmers-logo-dark.png" alt="">
+						</a>
+						<button class="mobile-close">
+							<i class="fa-solid fa-xmark"></i>
+						</button>
+					</div>
+					<section class="mContainer-content">
+						<div class="mMainNav">
+							<div class="mMainNav-inner">
+								<div>
+									<div class="mMainNavList mCursorOver" data-index="0">
+										<div class="mMainNavList-wrapper">
+											<span>교육</span>
+										</div>
+									</div>
+									<div class="mMainNavList mCursorLeave" data-index="1">
+										<div class="mMainNavList-wrapper">
+											<span>데브코스</span>
+											<div class="devSpan devSubSpan">부트캠프</div>
+										</div>
+									</div>
+									<div class="mMainNavList mCursorLeave" data-index="2">
+										<div class="mMainNavList-wrapper">
+											<span>코딩테스트</span>
+										</div>
+									</div>
+									<a class="mMainNavListExt" href="#">
+										<div class="mMainNavList-wrapper">
+											<span>인증시험</span>
+											<i class="fa-solid fa-arrow-up-right-from-square authLink"></i>
+										</div>
+									</a>
+									<a class="mMainNavListUtil l1 l2" href="#">블로그</a>
+									<a class="mMainNavListUtil l1 l2" href="#">기업서비스</a>
+								</div>
+								<a class="mMainNavListLogin" href="#">로그인</a>
+							</div>
+						</div>
+						<div class="mSuvNav">
+							<div class="mSubNav_ mSubNav-inner" data-index="0">
+								<div class="mSubNavList">
+									<div>
+										<a class="gridUlA mGridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">교육 홈</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="mSubNavList">
+									<div>
+										<a class="gridUlA mGridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">강의</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">전체</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">데브코스</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">영상/실습 강의</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">PCCP.E 자격증</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="mSubNavList">
+									<div>
+										<a class="gridUlA mGridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">MY 스쿨</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">수강 중인 코스</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">관리 중인 코스</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="mSubNavList">
+									<div>
+										<a class="gridUlA mGridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">강사 신청</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">강사/멘토풀 등록</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="mSubNavList">
+									<div>
+										<a class="gridUlA mGridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">캠퍼스</span>
+												<i class="fa-solid fa-arrow-up-right-from-square link"></i>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="mSubNav_ mSubNav-inner" data-index="1">
+								<div class="mSubNavList">
+									<div>
+										<a class="gridUlA mGridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">데브코스 홈</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="mSubNavList">
+									<div>
+										<a class="gridUlA mGridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">웹 데브코스</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">프론트엔드 과정</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">백엔드 과정</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">백엔드(with.ChatGPT) 과정</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">풀스택 과정</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="mSubNavList">
+									<div>
+										<a class="gridUlA mGridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">데이터 데브코스</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">데이터 분석 과정</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">데이터 엔지니어링 과정</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="mSubNav_ mSubNav-inner" data-index="2">
+								<div class="mSubNavList">
+									<div>
+										<a class="gridUlA mGridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">코딩테스트 문제</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="mSubNavList">
+									<div>
+										<a class="gridUlA mGridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">모든 문제</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">기초 문제</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">입문 문제</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">알고리즘 고득점 Kit</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">SQL 알고리즘 고득점 Kit</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">과제테스트</span>
+											</div>
+										</a>
+									</div>
+									<div>
+										<a class="gridUlA mGridUlC" href="#">
+											<div>
+												<span class="gridUlC-span">Q&A</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="mSubNavList">
+									<div>
+										<a class="gridUlA mGridUlB" href="#">
+											<div>
+												<span class="gridUlA-span">스킬 체크</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+			</div>
+		</header>
+	</div>
+	<div class="main-home">
+		<div>
+			<div class="main-container">
+				<div class="home-top">
+					<div class="event-container">
+						<div class="swiper-container">
+							<div class="swiper">
+								<div class="bn-html-wrap">
+									<a class="a_link" href="#">
+										<div class="a-inner">
+											<div class="bn-root-wrap">
+												<div class="bn-item">
+													<div class="item-lft">
+														<div class="label">
+															<span class="lb-txt">데브코스</span>
+														</div>
+														<div class="titleWrap">
+															<p class="title">1,700개 기업 채용 데이터 반영</p>
+															<p class="title">프론트엔드 데브코스</p>
+														</div>
+														<p class="sub-title">
+															백엔드와의 협업 최종 프로젝트로
+															<br>
+															실무에서의 팀 협업 경험까지
+														</p>
+													</div>
+													<div class="item-rgt">
+														<picture>
+															<!-- mobile -->
+															<source media="(max-width: 991px)"
+																srcset="./images/main_banner-mob.jpg">
+															<!-- desktop -->
+															<img class="bn-image" src="./images/main_banner-pc.jpg"
+																alt="배너 이미지">
+														</picture>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+
+								</div>
+							</div>
+							<div class="indicator">
+								<button>
+									<i class="fa-solid fa-angle-left"></i>
+								</button>
+								<div class="pagenation">
+									<span class="currentIdx">7</span>
+									<span class="divider">/</span>
+									<span class="totalIdx">8</span>
+								</div>
+								<button>
+									<i class="fa-solid fa-angle-right"></i>
+								</button>
+							</div>
+						</div>
+
+					</div>
+					<nav class="home-nav-container">
+						<ul class="hnc-ul">
+							<li>
+								<a href="#" class="hnc-li">
+									<button class="hnc-btn">
+										<span class="material-symbols-outlined">school</span>
+									</button>
+									<span class="hnc-span">무료 국비 강의</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="hnc-li">
+									<button class="hnc-btn">
+										<span class="material-symbols-outlined">code_blocks</span>
+									</button>
+									<span class="hnc-span">코딩테스트 문제</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="hnc-li">
+									<button class="hnc-btn">
+										<span class="material-symbols-outlined">library_books</span>
+									</button>
+									<span class="hnc-span">수강 중인 강의</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="hnc-li">
+									<button class="hnc-btn">
+										<span class="material-symbols-outlined">Article</span>
+									</button>
+									<span class="hnc-span">블로그</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="hnc-li">
+									<button class="hnc-btn">
+										<span class="material-symbols-outlined">Flowchart</span>
+									</button>
+									<span class="hnc-span">스킬체크</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="hnc-li">
+									<button class="hnc-btn">
+										<span class="material-symbols-outlined">Workspace_Premium</span>
+									</button>
+									<span class="hnc-span">코딩역량인증시험</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<main class="home-main">
+					<section class="home-section">
+						<hgroup>
+							<h2 class="hs-h2">국비지원으로 개발자 커리어 시작!</h2>
+							<a href="#" class="hs-a">
+								<span>
+									<span>더보기</span>
+									<i class="fa-solid fa-angle-right"></i>
+								</span>
+							</a>
+						</hgroup>
+						<div>
+							<div class="hs-container">
+								<a href="#" class="hsc-a">
+									<section>
+										<img src="./images/Dev_Thumnail_Data_Analysis_4th.png"
+											alt="[8기] K-Digital Training: 데이터 분석 데브코스">
+									</section>
+									<section>
+										<div>
+											<h3>[8기] K-Digital Training: 데이터 분석 데브코스</h3>
+											<div>
+												<span class="hsc-span1 hsc-span2">
+													모집 중
+													<span class="hsc-span3"></span>
+													D-27
+												</span>
+												<span class="hsc-span1 hsc-span4">
+													오픈 알림 신청
+												</span>
+												<span class="hsc-span1 hsc-span5">
+													국비지원
+												</span>
+											</div>
+										</div>
+										<div>
+											<div>
+												<span class="hsc-dd-span">무료</span>
+											</div>
+										</div>
+									</section>
+								</a>
+								<a href="#" class="hsc-a">
+									<section>
+										<img src="./images/Dev_Thumnail_Back-End_major_.jpg"
+											alt="[7기] K-Digital Training: 클라우드 기반 백엔드 엔지니어링">
+									</section>
+									<section>
+										<div>
+											<h3>[7기] K-Digital Training: 클라우드 기반 백엔드 엔지니어링</h3>
+											<div>
+												<span class="hsc-span1 hsc-span2">
+													모집 중
+													<span class="hsc-span3"></span>
+													D-20
+												</span>
+												<span class="hsc-span1 hsc-span4">
+													오픈 알림 신청
+												</span>
+												<span class="hsc-span1 hsc-span5">
+													국비지원
+												</span>
+											</div>
+										</div>
+										<div>
+											<div>
+												<span class="hsc-dd-span">무료</span>
+											</div>
+										</div>
+									</section>
+								</a>
+								<a href="#" class="hsc-a">
+									<section>
+										<img src="./images/Dev_Thumnail_Front-End_major_.png"
+											alt="[6기] K-Digital Training: 클라우드 기반 프론트엔드 엔지니어링">
+									</section>
+									<section>
+										<div>
+											<h3>[6기] K-Digital Training: 클라우드 기반 프론트엔드 엔지니어링</h3>
+											<div>
+												<span class="hsc-span1 hsc-span2">
+													모집 중
+													<span class="hsc-span3"></span>
+													D-20
+												</span>
+												<span class="hsc-span1 hsc-span4">
+													오픈 알림 신청
+												</span>
+												<span class="hsc-span1 hsc-span5">
+													국비지원
+												</span>
+											</div>
+										</div>
+										<div>
+											<div>
+												<span class="hsc-dd-span">무료</span>
+											</div>
+											<div class="rate">
+												<span> ★ </span>
+												<span>5</span>
+											</div>
+										</div>
+									</section>
+								</a>
+								<a href="#" class="hsc-a">
+									<section>
+										<img src="./images/ai-backend-thumb.jpg"
+											alt="[3기] K-Digital Training: 생성형 AI 활용 백엔드 개발">
+									</section>
+									<section>
+										<div>
+											<h3>[3기] K-Digital Training: 생성형 AI 활용 백엔드 개발</h3>
+											<div>
+												<span class="hsc-span1 hsc-span6">
+													모집 마감
+												</span>
+												<span class="hsc-span1 hsc-span4">
+													오픈 알림 신청
+												</span>
+												<span class="hsc-span1 hsc-span5">
+													국비지원
+												</span>
+											</div>
+										</div>
+										<div>
+											<div>
+												<span class="hsc-dd-span">무료</span>
+											</div>
+										</div>
+									</section>
+								</a>
+								<a href="#" class="hsc-a">
+									<section>
+										<img src="./images/Dev_Thumnail_Data_Engineering_major_.png"
+											alt="[6기] K-Digital Training: 데이터 엔지니어링 데브코스">
+									</section>
+									<section>
+										<div>
+											<h3>[6기] K-Digital Training: 데이터 엔지니어링 데브코스</h3>
+											<div>
+												<span class="hsc-span1 hsc-span6">
+													모집 마감
+												</span>
+												<span class="hsc-span1 hsc-span4">
+													오픈 알림 신청
+												</span>
+												<span class="hsc-span1 hsc-span5">
+													국비지원
+												</span>
+											</div>
+										</div>
+										<div>
+											<div>
+												<span class="hsc-dd-span">무료</span>
+											</div>
+										</div>
+									</section>
+								</a>
+								<a href="#" class="hsc-a">
+									<section>
+										<img src="./images/Dev_Thumnail_Web_Full_Stack_4th.png"
+											alt="[7기] K-Digital Training: 타입스크립트로 함께하는 웹 풀 사이클 개발(React, Node.js)">
+									</section>
+									<section>
+										<div>
+											<h3>[7기] K-Digital Training: 타입스크립트로 함께하는 웹 풀 사이클 개발(React, Node.js)</h3>
+											<div>
+												<span class="hsc-span1 hsc-span6">
+													모집 마감
+												</span>
+												<span class="hsc-span1 hsc-span4">
+													오픈 알림 신청
+												</span>
+												<span class="hsc-span1 hsc-span5">
+													국비지원
+												</span>
+											</div>
+										</div>
+										<div>
+											<div>
+												<span class="hsc-dd-span">무료</span>
+											</div>
+										</div>
+									</section>
+								</a>
+							</div>
+						</div>
+					</section>
+					<section class="home-section">
+						<hgroup>
+							<h2 class="hs-h2">추천 강의</h2>
+							<a href="#" class="hs-a">
+								<span>
+									<span>더보기</span>
+									<i class="fa-solid fa-angle-right"></i>
+								</span>
+							</a>
+						</hgroup>
+						<div>
+							<div class="hs-container">
+								<a href="#" class="hsc-a">
+									<section>
+										<img src="./images/Thumbnail_hint.png" alt="코딩테스트 연습 힌트 모음집">
+									</section>
+									<section>
+										<div>
+											<h3>코딩테스트 연습 힌트 모음집</h3>
+										</div>
+										<div>
+											<div>
+												<span class="hsc-dd-span">무료</span>
+											</div>
+											<div class="rate">
+												<span> ★ </span>
+												<span>5</span>
+											</div>
+										</div>
+									</section>
+								</a>
+								<a href="#" class="hsc-a">
+									<section>
+										<img src="./images/Dev_Thumnail_Back-End_major_.jpg"
+											alt="[7기] K-Digital Training: 클라우드 기반 백엔드 엔지니어링">
+									</section>
+									<section>
+										<div>
+											<h3>[7기] K-Digital Training: 클라우드 기반 백엔드 엔지니어링</h3>
+											<div>
+												<span class="hsc-span1 hsc-span2">
+													모집 중
+													<span class="hsc-span3"></span>
+													D-20
+												</span>
+												<span class="hsc-span1 hsc-span4">
+													오픈 알림 신청
+												</span>
+												<span class="hsc-span1 hsc-span5">
+													국비지원
+												</span>
+											</div>
+										</div>
+										<div>
+											<div>
+												<span class="hsc-dd-span">무료</span>
+											</div>
+										</div>
+									</section>
+								</a>
+								<a href="#" class="hsc-a">
+									<section>
+										<img src="./images/Dev_Thumnail_Front-End_major_.png"
+											alt="[6기] K-Digital Training: 클라우드 기반 프론트엔드 엔지니어링">
+									</section>
+									<section>
+										<div>
+											<h3>[6기] K-Digital Training: 클라우드 기반 프론트엔드 엔지니어링</h3>
+											<div>
+												<span class="hsc-span1 hsc-span2">
+													모집 중
+													<span class="hsc-span3"></span>
+													D-20
+												</span>
+												<span class="hsc-span1 hsc-span4">
+													오픈 알림 신청
+												</span>
+												<span class="hsc-span1 hsc-span5">
+													국비지원
+												</span>
+											</div>
+										</div>
+										<div>
+											<div>
+												<span class="hsc-dd-span">무료</span>
+											</div>
+											<div class="rate">
+												<span> ★ </span>
+												<span>5</span>
+											</div>
+										</div>
+									</section>
+								</a>
+							</div>
+						</div>
+					</section>
+					<section class="home-section">
+						<hgroup>
+							<h2 class="hs-h2">프로그래머스 블로그</h2>
+							<a href="#" class="hs-a">
+								<span>
+									<span>더보기</span>
+									<i class="fa-solid fa-angle-right"></i>
+								</span>
+							</a>
+						</hgroup>
+						<div>
+							<div class="hs-container">
+								<a href="#" class="hsc-a2">
+									<section class="hsc-a2-sc1">
+										<img src="./images/blog_KDT_interview__4_.png" alt="인터뷰01">
+									</section>
+									<section class="hsc-a2-sc2">
+										<h3 class="hsc-a2-sc2-h3"
+											title="재취업을 위해 시작한 데브코스, 더 깊이 생각하는 법을 배웠어요. - 백엔드 3기 수료생 김누리 님">
+											재취업을 위해 시작한 데브코스, 더 깊이 생각하는 법을 배웠어요. - 백엔드 3기 수료생 김누리 님
+										</h3>
+										<p class="hsc-a2-sc2-p" title="백엔드 데브코스 3기 수료생 김누리 님의 인터뷰입니다. 누리 님은 SM 업무를 하던 중 새로운 길을 찾고자
+										백엔드 데브코스에 참여해주셨는데요. 6개월간의 여정을 통해 기술 역량뿐만 아니라 협업과 문제 해결 능력까지 성장할 수 있었다는 누리 님의 이야기,
+										지금 바로 만나보세요!<...">
+											백엔드 데브코스 3기 수료생 김누리 님의 인터뷰입니다.
+											누리 님은 SM 업무를 하던 중 새로운 길을 찾고자 백엔드 데브코스에 참여해주셨는데요.
+											6개월간의 여정을 통해 기술 역량뿐만 아니라 협업과 문제 해결 능력까지 성장할 수 있었다는 누리 님의 이야기, 지금 바로 만나보세요!
+											<... </p>
+									</section>
+								</a>
+								<a href="#" class="hsc-a2">
+									<section class="hsc-a2-sc1">
+										<img src="./images/blog_expert_content_1__.png" alt="인터뷰02">
+									</section>
+									<section class="hsc-a2-sc2">
+										<h3 class="hsc-a2-sc2-h3"
+											title="[그렙 개발자가 들려주는 업무 이야기] 그렙 개발자는 어떻게 코드를 관리할까?(2)">
+											[그렙 개발자가 들려주는 업무 이야기] 그렙 개발자는 어떻게 코드를 관리할까?(2)
+										</h3>
+										<p class="hsc-a2-sc2-p" title="안녕하세요. 프로그래머스에서 평가 서비스를 담당하고 있는 백엔드 개발자 에이다(Ada) 입니다.
+										[지난 글](https://community.programmers.co.kr/post/11815)에서는 지속적 통합(CI, Continuous Integration)의 개념과 구성 방식...">
+											안녕하세요. 프로그래머스에서 평가 서비스를 담당하고 있는 백엔드 개발자 에이다(Ada) 입니다.
+											[지난 글](https://community.programmers.co.kr/post/11815)에서는 지속적 통합(CI,
+											Continuous Integration)의 개념과 구성 방식...
+										</p>
+									</section>
+								</a>
+								<a href="#" class="hsc-a2">
+									<section class="hsc-a2-sc1">
+										<img src="./images/blog_expert_content_1_.png" alt="인터뷰03">
+									</section>
+									<section class="hsc-a2-sc2">
+										<h3 class="hsc-a2-sc2-h3" title="곰돌이 젤리로 알아보는 인공지능 수학 KL Divergence">
+											곰돌이 젤리로 알아보는 인공지능 수학 KL Divergence
+										</h3>
+										<p class="hsc-a2-sc2-p" title="KL Divergence는 인공지능이 예측과 실제 데이터 간의 차이를 학습하는 데 사용하는 핵심 수식입니다.
+										데이터 사이언티스트 정경문 님의 6월 아티클은 Haribo 곰돌이 젤리의 맛 분포를 예시로 들어, KL Divergence의 개념을 쉽고 재미있게 풀어냅니다.
+										엔트로피와 크...">
+											KL Divergence는 인공지능이 예측과 실제 데이터 간의 차이를 학습하는 데 사용하는 핵심 수식입니다.
+											데이터 사이언티스트 정경문 님의 6월 아티클은 Haribo 곰돌이 젤리의 맛 분포를 예시로 들어, KL Divergence의 개념을 쉽고
+											재미있게 풀어냅니다.
+											엔트로피와 크...
+										</p>
+									</section>
+								</a>
+							</div>
+						</div>
+					</section>
+				</main>
+
+			</div>
+
 		</div>
-	</nav>
-	<main>
-		<div class="container">
-			<h1>웹화면 구현</h1>
-			<!-- //TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요. -->
+	</div>
+	<div class="botmPromotion">
+		<div class="botmPromotion-container1">
+			<div class="bpc-imgCon">
+				<img src="./images/a6fed2fa29f012e4a939.png" alt="">
+			</div>
 		</div>
-	</main>
-	<section>
-		<div class="container">
-			<h2>섹션1</h2>
-			<!-- //TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요. -->
+		<div class="botmPromotion-container2">
+			<div class="bpc-txtCon">
+				<p class="bpc-txtCon-p">
+					개발자 역량 평가 1위
+					<br class="bpc-txtCon-p-br">
+					<span class="bpc-txtCon-p-span">프로그래머스에서 만든</span>
+					<br>
+					자격증 취득에 도전해보세요!
+				</p>
+				<a class="bpc-txtCon-a" href="#">
+					" 역량인증자격증 자세히 알아보기 "
+					<i class="fa-solid fa-arrow-right"></i>
+				</a>
+			</div>
 		</div>
-	</section>
-	<section>
-		<div class="container">
-			<h2>섹션2</h2>
-			<!-- //TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요. -->
-		</div>
-	</section>
-	<section>
-		<div class="container">
-			<h2>섹션3</h2>
-			<!-- //TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요. -->
-		</div>
-	</section>
-	<section>
-		<div class="container">
-			<h2>섹션4</h2>
-			<!-- //TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요. -->
-		</div>
-	</section>
+	</div>
 	<footer>
-		<div class="container">
-			<p>© 2023 김똘똘. All rights reserved.</p>
-			<!-- //TODO: 본인의 닉네임, 이메일 주소, 저작권 표시 등을 작성하세요.
-			//FIXME: 특히, 가져온 그림에 대한 저작권 표시를 반드시 작성하세요. -->
+		<div class="ft-container">
+			<div>
+				<div class="ft-top">
+					<div class="ft-top-wrap">
+						<ul class="ftw-ul">
+						</ul>
+						<ul class="ftw-ul">
+							<li class="ftw-li">서비스</li>
+							<li class="ftw-li2">개발자용 프로그래머스</li>
+							<li class="ftw-li2">기업용 프로그래머스</li>
+						</ul>
+						<ul class="ftw-ul">
+							<li class="ftw-li">소식</li>
+							<li class="ftw-li2">공지사항</li>
+              <li class="ftw-li2">블로그</li>
+						</ul>
+						<ul class="ftw-ul">
+							<li class="ftw-li">자주 묻는 질문</li>
+							<li class="ftw-li2">
+							개인 회원
+							</li>
+							<li class="ftw-li2">
+							기업 회원
+							</li>
+						</ul>
+						<ul class="ftw-ul">
+							<li class="ftw-li">고객센터</li>
+							<li class="ftw-li2">대표번호: 1533-1886</li>
+							<li class="ftw-li2">운영시간: 오전 9시 ~ 오후 6시(주말 및 공휴일 휴무)</li>
+							<li class="ftw-li2">점심시간: 오후 12시 ~ 오후 1시</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ft-bottom">
+					<a href="#" class="ftb-a">2025 프로그래머스</a>
+					<p class="ftb-p">(주)그렙 / 대표 임성수 / 서울특별시 서초구 반포대로 45, 4층(서초동, 명정빌딩) / 사업자등록번호 220-88-75699 / 통신판매업신고 제 2014-서울강남-03241호 / 직업정보제공사업 신고번호 J1200020180027</p>
+					<p class="ftb-p">프로그래머스 사이트의 모든 콘텐츠, 정보, UI, HTML 소스 등에 대한 무단 복제, 전송, 배포, 크롤링, 스크래핑 등의 행위를 거부하며, 이러한 행위는 관련 법령에 의해 엄격히 금지됩니다.</p>
+				</div>
+			</div>
 		</div>
 	</footer>
+	<script src="./js/main.js"></script>
 </body>
 
 </html>
