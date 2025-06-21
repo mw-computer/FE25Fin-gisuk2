@@ -14,7 +14,7 @@ ex) n단 상단 메뉴바 만들기 찾아보면 많음 -->
 
 
 ### 컴퓨터공학과 신은욱
-> 디플로이된 웹사이트 주소 : [신은욱 프로그래머스 웹페이지 제작](https://visionary-tarsier-d9f495.netlify.app/)
+> 디플로이된 웹사이트 주소 : [https://visionary-tarsier-d9f495.netlify.app/](https://visionary-tarsier-d9f495.netlify.app/)
 
 ### 파이널 프로젝트 요약
 
